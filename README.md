@@ -2,7 +2,7 @@
 
 一个用 Rust 实现的超高速异步日志库，提供 Python 绑定。比标准 Python 日志快 **33 倍**，比 picologging 快 **12 倍**。
 
-> **Note**: 支持 Python 3.8 - 3.14。基准测试中的 picologging 目前仅支持到 Python 3.12。
+> **Note**: 支持 Python 3.11 - 3.14。基准测试中的 picologging 目前仅支持到 Python 3.12。
 
 ## 性能基准
 
@@ -380,7 +380,7 @@ loop {
 ### 前置条件
 
 - Rust 1.56+
-- Python 3.8+
+- Python 3.11+
 - pip 和 maturin
 
 ### 从源代码构建
@@ -440,7 +440,7 @@ nexuslog/
 ### Python
 
 - `pyo3` >= 0.27.2
-- `Python` >= 3.8
+- `Python` >= 3.11
 
 ---
 
