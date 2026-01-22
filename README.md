@@ -15,25 +15,27 @@ High-performance async logging library, compatible with Python standard logging 
 </p>
 
 ```
+Benchmarking with 1,000,000 log messages
+
 ------------------------------------------------------------
 Logger               Time (s)     Msgs/sec        Log size    
 ------------------------------------------------------------
-Python logging       5.157        193,911         81,888,890 bytes
-loguru               4.612        216,826         82,888,890 bytes
-picologging          1.893        528,262         78,888,882 bytes
-spdlog               0.742        1,347,709       76,888,890 bytes
-NexusLogger          0.135        7,407,407       97,888,890 bytes
-NexusLogger unix_ts  0.130        7,692,308       82,888,890 bytes
+Python logging       5.237        190,954         82,888,890 bytes
+loguru               7.039        142,070         89,888,890 bytes
+picologging          1.999        500,306         79,888,882 bytes
+spdlog               0.298        3,358,706       79,888,890 bytes
+NexusLogger          0.131        7,654,750       97,888,890 bytes
+NexusLogger unix_ts  0.127        7,874,086       82,888,890 bytes
 ------------------------------------------------------------
 
-NexusLogger is 38.20x faster than Python logging
-NexusLogger is 34.16x faster than loguru
-NexusLogger is 14.02x faster than picologging
-NexusLogger is 5.50x faster than spdlog
-NexusLogger unix_ts is 39.67x faster than Python logging
-NexusLogger unix_ts is 35.48x faster than loguru
-NexusLogger unix_ts is 14.56x faster than picologging
-NexusLogger unix_ts is 5.71x faster than spdlog
+NexusLogger is 40.09x faster than Python logging
+NexusLogger is 53.88x faster than loguru
+NexusLogger is 15.30x faster than picologging
+NexusLogger is 2.28x faster than spdlog
+NexusLogger unix_ts is 41.24x faster than Python logging
+NexusLogger unix_ts is 55.42x faster than loguru
+NexusLogger unix_ts is 15.74x faster than picologging
+NexusLogger unix_ts is 2.34x faster than spdlog
 ```
 
 ## Installation
